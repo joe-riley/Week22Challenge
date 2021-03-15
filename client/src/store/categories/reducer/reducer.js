@@ -1,15 +1,14 @@
-import * as COSNT from '../constants';
+import * as CONST from '../constants';
 import initialState from './initialState';
 
 export default (state = initialState, { type, payload }) => {
   switch (type) {
-    case UPDATE_CATEGORIES:
-      return {
+    case CONST.CATEGORIES_UPDATE_CATEGORIES: return {
         ...state,
         categories: [...payload],
       };
 
-    case UPDATE_CURRENT_CATEGORY:
+    case CONST.CATEGORIES_UPDATE_CURRENT_CATEGORY:
       return {
         ...state,
         currentCategory: payload.currentCategory

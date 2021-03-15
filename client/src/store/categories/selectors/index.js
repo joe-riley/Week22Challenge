@@ -1,2 +1,2 @@
-export { default as selectCategories } from './select-categories';
-export { default as selectCurrentCategory } from './select-current-category';
+export { default as selectCategories } from './selectCategories';
+export { default as selectCurrentCategory } from './selectCurrentCategory';
